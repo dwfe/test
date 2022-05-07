@@ -1,0 +1,48 @@
+{
+  "name": "@do-while-for-each/test",
+  "description": "Shared utils for test",
+  "version": "1.0.0",
+  "exports": "./dist/cjs/index.js",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "dist/types/*"
+      ]
+    }
+  },
+  "homepage": "https://github.com/dwfe/test",
+  "bugs": "https://github.com/dwfe/test/issues",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dwfe/test.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Do|While|For|Each",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "clean": "dwfeFs cleanDir . --fileNames=\"dist;node_modules;package-lock.json\"",
+    "build": "dwfeFs rmForce dist --noConfirm && tsc -b src/tsconfig.json",
+    "version": "npm run build",
+    "postversion": "git push",
+    "deploy": "npm version patch && npm publish"
+  },
+  "dependencies": {
+    "@types/jest": "27.x.x",
+    "jest": "27.x.x",
+    "ts-jest": "27.x.x",
+    "jest-html-reporters": "3.0.6"
+  },
+  "devDependencies": {
+    "@do-while-for-each/tsconfig": "^1.0.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
