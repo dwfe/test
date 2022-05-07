@@ -1,7 +1,7 @@
 {
   "name": "@do-while-for-each/test",
   "description": "Shared utils for test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "exports": "./dist/cjs/index.js",
   "typesVersions": {
     "*": {
