@@ -40,7 +40,7 @@
     "jest-html-reporters": "3.0.6"
   },
   "devDependencies": {
-    "@do-while-for-each/tsconfig": "^1.0.3"
+    "@do-while-for-each/tsconfig": "1.x.x"
   },
   "publishConfig": {
     "access": "public"
