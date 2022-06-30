@@ -1,6 +1,6 @@
 {
   "name": "@do-while-for-each/test",
-  "description": "Shared utils for test",
+  "description": "Based on Jest common testing utilities",
   "version": "1.0.1",
   "exports": "./dist/cjs/index.js",
   "typesVersions": {
