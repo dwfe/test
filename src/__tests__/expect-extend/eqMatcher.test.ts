@@ -2,7 +2,7 @@ import {traversEachWithEachAllJSDataTypes} from '../../index';
 
 describe('eq.Matcher', () => {
 
-  test('check(a, b)', () => {
+  test('.isEqual(a, b)', () => {
 
     traversEachWithEachAllJSDataTypes((a, b) => {
 

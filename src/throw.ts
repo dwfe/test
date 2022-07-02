@@ -1,4 +1,4 @@
-import {expect} from '@jest/globals'
+import './index';
 
 export function Throw(fn: Function, message: string) {
   try {
@@ -8,7 +8,7 @@ export function Throw(fn: Function, message: string) {
     expect(err).toHaveProperty('message', message);
     return;
   }
-  expect('unreachable code section').toBe('but it came to this anyway');
+  expect('unreachable code section').eq('but it came to this anyway');
 }
 
 export function noThrow(fn: Function) {

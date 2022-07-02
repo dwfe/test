@@ -19,7 +19,7 @@ declare global {
  *   expect(a).not.eq(b); // AsymmetricMatcher
  *   expect(x).eq(z);
  */
-export const eq = function (this: MatcherState, received: any, expected: any): SyncExpectationResult {
+export const eqMatcher = function (this: MatcherState, received: any, expected: any): SyncExpectationResult {
   if (this.isNot) {
     expect(received).not.toBe(expected);
   } else {
@@ -32,6 +32,6 @@ export const eq = function (this: MatcherState, received: any, expected: any): S
 }
 
 expect.extend({
-  eq
+  eq: eqMatcher
 });
 
