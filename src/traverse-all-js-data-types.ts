@@ -7,7 +7,8 @@ export const allJsDataTypes = [
   ['hello', '-1', '0', '', '1'] as string[],
   [Symbol(), Symbol('id')] as symbol[],
   [{hello: 123}, {}] as object[],
-  [() => 'world'] as Array<() => void>,
+  [() => 'world', function hello(){}] as Array<() => void>,
+  [class A{}],
 ]
 
 export function traverseAllJSDataTypes(onNextValue: (value: any) => void) {
