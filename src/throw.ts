@@ -5,7 +5,8 @@ export function Throw(fn: Function, message: string) {
     fn();
   } catch (err) {
     expect(err).toBeInstanceOf(Error);
-    expect(err).toHaveProperty('message', message);
+    expect(err).toHaveProperty('message');
+    expect(err.message.startsWith(message));
     return;
   }
   expect('unreachable code section').eq('but it came to this anyway');
