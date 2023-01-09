@@ -3,6 +3,5 @@
   - `True`
   - `False`
 - `jestConsoleLogFix`
-- `noop`, `noop2`, `noop3`, `noop4`, `noop5`, `noop6`, `noop7`
 - `Throw`, `noThrow`
 - `allJsDataTypes`, `traverseAllJSDataTypes`, `traversEachWithEachAllJSDataTypes`
